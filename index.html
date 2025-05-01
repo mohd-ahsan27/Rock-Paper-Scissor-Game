@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rock Paper Scissors</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white  flex flex-col items-center justify-center p-4">
+  <h1 class="text-2x1 font-bold text-gray-800 mb-6">Rock Paper Scissors</h1>
+
+  <div id="choices" class="flex gap-10 mb-3">
+    <img src="./Assets/rock.png" data-choice="rock" alt="Rock" class="w-20 h-20 object-cover rounded-full cursor-pointer hover:border-black hover:border-4 hover:scale-110 transition-transform duration-300">
+    <img src="./Assets/paper.png" data-choice="paper" alt="Paper" class="w-20 h-20 object-cover rounded-full  cursor-pointer  hover:border-black hover:border-4  hover:scale-110 transition-transform duration-300">
+    <img src="./Assets/scissors.png" data-choice="scissors" alt="Scissors" class="w-20 h-20 object-cover rounded-full  cursor-pointer  hover:border-black hover:border-4  hover:scale-110 transition-transform duration-300">
+  </div>
+
+  <!-- <div id="result" class="text-2xl font-semibold text-center p-4 rounded-xl mb-4 transition-all duration-300"></div> -->
+
+  <div class="flex gap-12 text-lg   bg-gray px-6 py-4 rounded-xl ">
+    <p>User Wins: <span id="userScore" class="font-bold text-purple-700">0</span></p>
+    <p>Computer Wins: <span id="computerScore" class="font-bold text-red-700">0</span></p>
+  </div>
+
+  <div id="result" class="text-lg font-semibold text-center p-4 rounded-lg mb-2 transition-all duration-300"></div>
+
+ <script src="script.js"></script>
+</body>
+</html>
